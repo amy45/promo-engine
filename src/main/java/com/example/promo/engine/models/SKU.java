@@ -10,4 +10,8 @@ import lombok.Data;
 public class SKU {
     private SKUTYPE name;
     private long price;
+
+    public SKU(SKUTYPE name) {
+        this.name = name;
+    }
 }
