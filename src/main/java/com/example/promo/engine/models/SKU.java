@@ -1,4 +1,4 @@
-package com.example.promotionengine.model;
+package com.example.promo.engine.models;
 
 import com.example.promo.engine.enums.SKUTYPE;
 import lombok.Data;
