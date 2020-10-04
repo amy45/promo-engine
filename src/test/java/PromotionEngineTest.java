@@ -55,6 +55,6 @@ public class PromotionEngineTest {
     @Test
     public void when_sku_are_C_D_should_return_promo_price() {
         skuList = Arrays.asList(skuC, skuD);
-        Assert.assertEquals(20, promotionService.getTotalPrice(skuList));
+        Assert.assertEquals(30, promotionService.getTotalPrice(skuList));
     }
 }
