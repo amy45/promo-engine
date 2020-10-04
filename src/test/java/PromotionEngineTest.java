@@ -57,4 +57,23 @@ public class PromotionEngineTest {
         skuList = Arrays.asList(skuC, skuD);
         Assert.assertEquals(30, promotionService.getTotalPrice(skuList));
     }
+
+    @Test
+    public void when_sku_are_3A_should_return_promo_price() {
+        skuList = Arrays.asList(skuA, skuA, skuA);
+        Assert.assertEquals(130, promotionService.getTotalPrice(skuList));
+    }
+
+    @Test
+    public void when_sku_are_2B_should_return_promo_price() {
+        skuList = Arrays.asList(skuB, skuB);
+        Assert.assertEquals(45, promotionService.getTotalPrice(skuList));
+    }
+
+    @Test
+    public void when_sku_are_5A_5B_C_should_return_promo_price() {
+        skuList = Arrays.asList(skuA, skuA, skuA,skuA,skuA,skuB,skuB,skuB, skuB, skuB, skuC);
+        Assert.assertEquals(370, promotionService.getTotalPrice(skuList));
+    }
+
 }

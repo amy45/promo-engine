@@ -54,6 +54,9 @@ public class PromotionService {
             totalPriceOfC = (countC * skuPriceMap.get(SKUTYPE.C));
             totalPriceOfD = (countD * skuPriceMap.get(SKUTYPE.D));
         }
-        return totalPriceOfC + totalPriceOfD + priceCD;
+        long totalPriceOfA = (countA / 3) * 130 + (countA % 3 * 50);
+        long totalPriceOfB = (countB / 2) * 45 + (countB % 2 * 30);
+
+        return totalPriceOfA + totalPriceOfB + totalPriceOfC + totalPriceOfD + priceCD;
     }
 }
