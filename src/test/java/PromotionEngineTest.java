@@ -1,3 +1,4 @@
+import com.example.promo.engine.enums.SKUTYPE;
 import org.junit.Assert;
 import org.junit.Test;
 
